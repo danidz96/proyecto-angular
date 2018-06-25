@@ -1,10 +1,17 @@
-<h1>Proyecto de Angular</h1>
+<header>
+  <ul>
+    <li><a class="underline" [routerLink] = "['/sobre-mi']"> Sobre mí</a></li>
+    <li><a class="underline" [routerLink] = "['/proyectos']">Proyectos</a></li>
+    <li class="logo"><a href="#">DD</a></li>
+    <li><a class="underline" [routerLink] = "['/crear-proyecto']">Crear Proyecto</a></li>
+    <li><a class="underline" [routerLink] = "['/contacto']">Contacto</a></li>
+  </ul>
+</header>
 
-<ul>
-  <li><a [routerLink] = "['/sobre-mi']"> Sobre mí</a></li>
-  <li><a [routerLink] = "['/proyectos']">Proyectos</a></li>
-  <li><a [routerLink] = "['/crear-proyecto']">Crear Proyecto</a></li>
-  <li><a [routerLink] = "['/contacto']">Contacto</a></li>
-</ul>
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
 
-<router-outlet></router-outlet>
+<footer>
+  Primer proyecto con Angular Dani Domínguez
+</footer>

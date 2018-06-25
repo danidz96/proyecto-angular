@@ -11,8 +11,75 @@
 body {
     font-family: 'Raleway', sans-serif;
     background: #dbdbdb;
+    font-size: 18px;
 }
 
 h1, h2, h3 {
     font-family: 'Bitter', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navegación */
+
+header {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: rgb(0, 118, 228);
+    position: fixed;
+}
+
+header ul {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 60%;
+    flex-wrap: nowrap;
+}
+
+header li {
+    line-height: 90px;
+    list-style: none;
+}
+
+header a {
+    color: white;
+    transition: all 300ms;
+    position: relative;
+    display: inline-block;
+}
+
+header .underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 30%;
+    background: rgb(255, 255, 255);
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+header .underline:hover:before, header .underline:focus:before, header .underline:active:before {
+    left: 0;
+    right: 0;
+}
+
+header .logo {
+    font-family: 'Finger Paint';
+    font-size: 2.5em;
+    transition: all .2s ease-in-out;
+}
+
+header .logo:hover {
+    transform: scale(1.2);
 }
