@@ -171,6 +171,7 @@ input, textarea {
     padding-bottom: 10px;
     padding-top: 10px;
     transition: ease-in 0.2s;
+    font-family: 'Raleway', serif;
 }
 
 textarea {
@@ -252,4 +253,28 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
 
 form input[disabled] {
     opacity: 0.5;
+}
+
+.message {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding:20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+.success {
+    background: #139449;
+}
+
+.success a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.failed {
+    background: #ff0000;
+    color: #ffffff;
 }
