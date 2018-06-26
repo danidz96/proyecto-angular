@@ -100,10 +100,11 @@ header .logo:hover {
 }
 
 /* Sobre mí */
+
 #title {
     text-align: center;
     width: 75%;
-    margin:30px auto 80px auto;
+    margin: 30px auto 80px auto;
 }
 
 #title h1 {
@@ -127,9 +128,8 @@ header .logo:hover {
 }
 
 .about h2 {
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
 }
-
 
 /* Footer */
 
@@ -138,5 +138,118 @@ footer {
     margin: 0 auto;
     padding: 20px 0;
     text-align: center;
+    opacity: 0.5;
+}
+
+/* Formulario */
+
+.container {
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.container h2 {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2em !important;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #1a1a1a;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: ease-in 0.2s;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type='text']:focus, textarea:focus {
+    transform: scale(1.05);
+    border: none;
+    border: 2px solid rgb(0, 118, 228);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #222;
+    font-size: 16px;
+}
+
+::-webkit-input-placeholder {
+    color: #ccc;
+    font-family: 'Raleway';
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.upload-btn {
+    border: 2px solid rgb(129, 129, 129);
+    color: rgb(129, 129, 129);
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Raleway';
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+input[type=submit] {
+    width: 120px;
+    padding: 10px 20px;
+    background: rgb(0, 118, 228);
+    color: #dbdbdb;
+    font-family: 'Raleway';
+    margin-top: -10px;
+}
+
+input[type=submit]:hover {
+    background: rgb(0, 84, 163);
+    cursor: pointer;
+}
+
+/* Form Validation */
+
+.form-error {
+    display: block;
+    padding-bottom: 20px;
+    color: red;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+    border: 2px solid red;
+}
+
+form input[disabled] {
     opacity: 0.5;
 }
