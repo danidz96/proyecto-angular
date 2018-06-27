@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 /* Navegación */
 
 header {
@@ -291,27 +295,24 @@ form input[disabled] {
     grid-gap: 20px;
 }
 
-li .project {
+.project {
     list-style: none;
     background: rgb(255, 255, 255);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     transition: all 0.3s;
 }
 
-li .project:hover {
+.project:hover {
     transform: scale(1.05);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-img {
-    width: 100%;
-}
 
-li .project h3 {
+.project h3 {
     margin-bottom: 10px;
 }
 
-li .project-content {
+.project-content {
     background: rgb(255, 255, 255);
     border-radius: 3px;
     margin-top: -5px;
@@ -326,13 +327,6 @@ li .project-content {
     border-radius: 50px;
     color: rgb(0, 118, 228);
     margin-top: 15px;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
 }
 
 .btn:hover {
@@ -344,41 +338,43 @@ li .project-content {
 /* Project Details */
 
 article {
-    background: white;
-    padding-bottom: 30px;
-    text-align: center;
+  background: white;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 article .grid {
-    display: grid;
-    grid-template-columns: 4fr 3fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-gap: 20px;
 }
 
-article h1, article h2 {
+article h1,
+article h2 {
   padding-bottom: 10px !important;
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
 
-article .item:first-child{
-    margin-top: 20px;
+article .item:first-child {
+  margin-top: 20px;
 }
 
 article .item {
-    margin-bottom: 15px;
-    line-height: 1.7;
+  margin-bottom: 15px;
+  line-height: 1.7;
 }
 
-.edit, .delete {
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 50px;
+.edit,
+.delete {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 50px;
 }
 
 .edit {
-    border: 1px solid #ff7b00;
-    color: #ff7b00;
+  border: 1px solid #ff7b00;
+  color: #ff7b00;
 }
 
 .edit:hover {
@@ -388,26 +384,24 @@ article .item {
 }
 
 .delete {
-    border: 1px solid #ff0000;
-    color: #ff0000;
+  border: 1px solid #ff0000;
+  color: #ff0000;
 }
 
 .delete:hover {
-    cursor: pointer;
-    color: #fff;
-    background: #ff0000;
+  cursor: pointer;
+  color: #fff;
+  background: #ff0000;
 }
 
 .description {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .description h2 {
-    font-size: 1.5em !important;
-    margin-bottom: 20px !important;
+  font-size: 1.5em !important;
+  margin-bottom: 20px !important;
 }
-
-
