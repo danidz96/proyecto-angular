@@ -131,7 +131,7 @@ header .logo:hover {
     width: 75%;
     margin: 0 auto;
     line-height: 1.7;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     text-align: justify;
 }
 
@@ -338,7 +338,6 @@ form input[disabled] {
 /* Project Details */
 
 article {
-  background: white;
   padding-bottom: 30px;
   text-align: center;
 }
