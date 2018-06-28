@@ -15,9 +15,14 @@
           <p>{{project.langs}}</p>
         </div>
         <div class="item">
-          <p>
+          <p *ngIf="confirm == false">
             <a [routerLink]="['/editar-proyecto', project._id]" class="edit">Editar</a>
-            <a (click)="deleteProject(project._id)" class="delete">Eliminar</a>
+            <a (click)="setConfirm(true)" class="delete">Eliminar</a>
+          </p>
+          <p *ngIf="confirm == true">
+            <span class="confirmation">¿Seguro que quieres eliminar el proyecto?</span>
+            <a (click)="setConfirm(false)" class="edit">Cancelar</a>
+            <a (click)="deleteProject(project._id)" class="delete">Aceptar</a>
           </p>
         </div>
       </div>

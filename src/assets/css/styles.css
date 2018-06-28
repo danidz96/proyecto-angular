@@ -407,3 +407,8 @@ article .item {
   margin-bottom: 20px !important;
 }
 
+.confirmation {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
